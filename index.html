@@ -79,7 +79,7 @@ let flights = [];
 let index = 0;
 
 async function fetchFlights() {
-  const url = `https://api.aviationstack.com/v1/flights?access_key=${API_KEY}&arr_iata=CLT&flight_status=active&limit=10`;
+  const url = `https://api.aviationstack.com/v1/flights?access_key=$e381429a76ea7eac1fb838b22e66e3c4&arr_iata=CLT&flight_status=active&limit=10`;
   const res = await fetch(url);
   const data = await res.json();
   flights = data.data || [];
